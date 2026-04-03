@@ -1,6 +1,15 @@
 --extra-index-url https://download.pytorch.org/whl/cpu
+<<<<<<< HEAD
 flask==3.0.0
 flask-cors==4.0.0
 transformers==4.35.0
 torch==2.9.0+cpu
 sentencepiece==0.1.99
+=======
+flask
+flask-cors
+transformers
+torch
+sentencepiece
+gunicorn
+>>>>>>> 180d830e6c23914a83ad355442fe5c044921ba97

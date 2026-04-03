@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinguaBot 🤖</title>
+    <!-- Use Poppins font as requested -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for the send icon and copy icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Header -->
+        <header class="chat-header">
+            <h2>LinguaBot 🤖</h2>
+            <div class="lang-selector">
+                <label for="language">Translate to:</label>
+                <select id="language">
+                    <option value="hi">Hindi</option>
+                    <option value="te">Telugu</option>
+                </select>
+            </div>
+        </header>
+
+        <!-- Chat Area -->
+        <main class="chat-area" id="chatArea">
+            <div class="message bot-message">
+                <div class="bot-message-container">
+                    <div class="bubble">
+                        Hello! I am LinguaBot. I can translate English to Hindi and Telugu. Please note that the first translation in a new language might take a little longer while the model loads. Type a message to begin!
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Input Area -->
+        <footer class="chat-input-area">
+            <input type="text" id="userInput" placeholder="Type your message in English..." autocomplete="off">
+            <button id="sendBtn" title="Send"><i class="fa fa-paper-plane"></i></button>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
